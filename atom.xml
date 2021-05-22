@@ -3,11 +3,11 @@
   <title>不停</title>
   
   
-  <link href="https://gitee.com/ding-guojing/ding-guojing/atom.xml" rel="self"/>
+  <link href="https://github.com/dgj460795972/dgj460795972.github.io/atom.xml" rel="self"/>
   
-  <link href="https://gitee.com/ding-guojing/ding-guojing/"/>
+  <link href="https://github.com/dgj460795972/dgj460795972.github.io/"/>
   <updated>2021-05-21T08:14:57.670Z</updated>
-  <id>https://gitee.com/ding-guojing/ding-guojing/</id>
+  <id>https://github.com/dgj460795972/dgj460795972.github.io/</id>
   
   <author>
     <name>不停</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>First</title>
-    <link href="https://gitee.com/ding-guojing/ding-guojing/2021/05/21/First/"/>
-    <id>https://gitee.com/ding-guojing/ding-guojing/2021/05/21/First/</id>
+    <link href="https://github.com/dgj460795972/dgj460795972.github.io/2021/05/21/First/"/>
+    <id>https://github.com/dgj460795972/dgj460795972.github.io/2021/05/21/First/</id>
     <published>2021-05-21T08:13:28.000Z</published>
     <updated>2021-05-21T08:14:57.670Z</updated>
     
@@ -35,14 +35,14 @@
     
     
     
-    <category term="python" scheme="https://gitee.com/ding-guojing/ding-guojing/tags/python/"/>
+    <category term="python" scheme="https://github.com/dgj460795972/dgj460795972.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://gitee.com/ding-guojing/ding-guojing/2021/05/14/hello-world/"/>
-    <id>https://gitee.com/ding-guojing/ding-guojing/2021/05/14/hello-world/</id>
+    <link href="https://github.com/dgj460795972/dgj460795972.github.io/2021/05/14/hello-world/"/>
+    <id>https://github.com/dgj460795972/dgj460795972.github.io/2021/05/14/hello-world/</id>
     <published>2021-05-14T12:26:00.647Z</published>
     <updated>2021-05-14T12:26:00.647Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>Hexo主题LiveForCode介绍</title>
-    <link href="https://gitee.com/ding-guojing/ding-guojing/2020/08/01/Hexo%E4%B8%BB%E9%A2%98LiveForCode%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://gitee.com/ding-guojing/ding-guojing/2020/08/01/Hexo%E4%B8%BB%E9%A2%98LiveForCode%E4%BB%8B%E7%BB%8D/</id>
+    <link href="https://github.com/dgj460795972/dgj460795972.github.io/2020/08/01/Hexo%E4%B8%BB%E9%A2%98LiveForCode%E4%BB%8B%E7%BB%8D/"/>
+    <id>https://github.com/dgj460795972/dgj460795972.github.io/2020/08/01/Hexo%E4%B8%BB%E9%A2%98LiveForCode%E4%BB%8B%E7%BB%8D/</id>
     <published>2020-07-31T16:00:00.000Z</published>
     <updated>2021-05-19T04:52:24.786Z</updated>
     
@@ -72,17 +72,17 @@
     
     
     
-    <category term="Web" scheme="https://gitee.com/ding-guojing/ding-guojing/categories/Web/"/>
+    <category term="Web" scheme="https://github.com/dgj460795972/dgj460795972.github.io/categories/Web/"/>
     
     
-    <category term="Hexo" scheme="https://gitee.com/ding-guojing/ding-guojing/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://github.com/dgj460795972/dgj460795972.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://gitee.com/ding-guojing/ding-guojing/2020/01/01/HelloWorld/"/>
-    <id>https://gitee.com/ding-guojing/ding-guojing/2020/01/01/HelloWorld/</id>
+    <link href="https://github.com/dgj460795972/dgj460795972.github.io/2020/01/01/HelloWorld/"/>
+    <id>https://github.com/dgj460795972/dgj460795972.github.io/2020/01/01/HelloWorld/</id>
     <published>2019-12-31T16:00:00.000Z</published>
     <updated>2021-05-19T04:52:24.786Z</updated>
     
@@ -91,10 +91,10 @@
     
     
     
-    <category term="Web" scheme="https://gitee.com/ding-guojing/ding-guojing/categories/Web/"/>
+    <category term="Web" scheme="https://github.com/dgj460795972/dgj460795972.github.io/categories/Web/"/>
     
     
-    <category term="Hexo" scheme="https://gitee.com/ding-guojing/ding-guojing/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://github.com/dgj460795972/dgj460795972.github.io/tags/Hexo/"/>
     
   </entry>
   
