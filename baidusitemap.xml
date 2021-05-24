@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://blog.dingguojing.xyz/2021/05/21/First/</loc>
+    <loc>http://blog.dingguojing.xyz/First/</loc>
     <lastmod>2021-05-21</lastmod>
   </url>
   <url>
-    <loc>http://blog.dingguojing.xyz/2020/01/01/HelloWorld/</loc>
+    <loc>http://blog.dingguojing.xyz/HelloWorld/</loc>
     <lastmod>2021-05-19</lastmod>
   </url>
   <url>
-    <loc>http://blog.dingguojing.xyz/2021/05/14/hello-world/</loc>
+    <loc>http://blog.dingguojing.xyz/hello-world/</loc>
     <lastmod>2021-05-14</lastmod>
   </url>
 </urlset> 
