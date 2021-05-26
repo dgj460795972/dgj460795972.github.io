@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2021-05-25T11:41:52.028Z</updated>
+  <updated>2021-05-26T11:30:56.237Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TCP协议</title>
+    <link href="http://blog.dingguojing.xyz/TCP%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://blog.dingguojing.xyz/TCP%E5%8D%8F%E8%AE%AE/</id>
+    <published>2021-05-26T08:38:46.000Z</published>
+    <updated>2021-05-26T11:30:56.237Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;TCP，是一种可靠的、面向连接的&lt;strong&gt;字节流&lt;/strong&gt;服务。通过&lt;strong&gt;序号&lt;/strong&gt;对发送的数据报进行标记，同时对每个数据段进行&lt;strong&gt;确认&lt;/strong&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软考" scheme="http://blog.dingguojing.xyz/categories/%E8%BD%AF%E8%80%83/"/>
+    
+    <category term="传输层" scheme="http://blog.dingguojing.xyz/categories/%E8%BD%AF%E8%80%83/%E4%BC%A0%E8%BE%93%E5%B1%82/"/>
+    
+    
+    <category term="TCP" scheme="http://blog.dingguojing.xyz/tags/TCP/"/>
+    
+  </entry>
   
   <entry>
     <title>python框架</title>

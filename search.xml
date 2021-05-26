@@ -40,4 +40,51 @@
         <tag>python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>TCP协议</title>
+    <url>/TCP%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>TCP，是一种可靠的、面向连接的<strong>字节流</strong>服务。通过<strong>序号</strong>对发送的数据报进行标记，同时对每个数据段进行<strong>确认</strong>。</p>
+<span id="more"></span>
+<h2 id="TCP报文首部格式"><a href="#TCP报文首部格式" class="headerlink" title="TCP报文首部格式"></a>TCP报文首部格式</h2><p><img src="http://blog.dingguojing.xyz/images/ruankao/tcp.png" alt="TCP"></p>
+<h3 id="源端口和目的端口"><a href="#源端口和目的端口" class="headerlink" title="源端口和目的端口"></a>源端口和目的端口</h3><p>该字段均为16位，通过使用端口来标识源端和目的端的应用进程，比如Http，基于TCP协议，目的端端口为80.</p>
+<h3 id="序列号和确认号"><a href="#序列号和确认号" class="headerlink" title="序列号和确认号"></a>序列号和确认号</h3><p>序列号是指每一个TCP报文段的序号，下一个TCP报文段的序号值等于上一个报文段序号加上该报文的长度。<br>确认号是指，发送端下一个报文段的第一个数据字段的序号。</p>
+<h3 id="报头长度"><a href="#报头长度" class="headerlink" title="报头长度"></a>报头长度</h3><p>报头长度为4字节，32位。能取到最大值为15。为了保证报头长度是32位的倍数，所以TCP报头长度最多有60字节，没有任何选项的TCP报头长度为20字节。</p>
+<h3 id="保留字段"><a href="#保留字段" class="headerlink" title="保留字段"></a>保留字段</h3><p>保留字段6字节，通常设置为0</p>
+<h3 id="标记字段"><a href="#标记字段" class="headerlink" title="标记字段"></a>标记字段</h3><p>6个标记字段。</p>
+<ul>
+<li>URG，表示紧急指针，需要尽快传送</li>
+<li>ACK，建立连接后的报文回应，设置为1</li>
+<li>PSH, <strong>接收端</strong> 应用程序应该立即从TCP接收缓冲区中读走数据,交给上层协议。</li>
+<li>RST，要求对方重新建立连接。</li>
+<li>SYN，建立连接。</li>
+<li>FIN，释放连接。</li>
+</ul>
+<h3 id="窗口大小"><a href="#窗口大小" class="headerlink" title="窗口大小"></a>窗口大小</h3><p>该字段用来进行流量控制，作为接收方让发送方设置其发送窗口的依据。告诉对方本端的TCP接收缓冲区还能容纳多少字节的数据，这样对方就可以控制发送数据的速度。</p>
+<h3 id="16位校验和"><a href="#16位校验和" class="headerlink" title="16位校验和"></a>16位校验和</h3><p>由 <strong>发送端</strong> 填充，接收端对TCP报文段执行CRC算法以检验TCP报文段在传输过程中是否损坏。注意，这个校验不仅包括TCP头部，也包括数据部分。</p>
+<h3 id="16位紧急指针"><a href="#16位紧急指针" class="headerlink" title="16位紧急指针"></a>16位紧急指针</h3><p>是一个正的偏移量。它和序号字段的值相加表示最后一个紧急数据的下一字节的序号。因此，确切地说，这个字段是紧急指针相对当前序号的偏移，不妨称之为紧急偏移。TCP的紧急指针是发送端向接收端发送紧急数据的方法。</p>
+<h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><p>该字段长度可变到40字节，为了保证TCP头部是32位的倍数，需要填充0</p>
+<h2 id="TCP连接过程"><a href="#TCP连接过程" class="headerlink" title="TCP连接过程"></a>TCP连接过程</h2><blockquote>
+<p>Tcp通过3次握手建立连接，双方通信之前均处于closed状态。</p>
+</blockquote>
+<p><img src="http://blog.dingguojing.xyz/images/ruankao/tcp_3.png" alt="3次握手"></p>
+<h3 id="第一次握手"><a href="#第一次握手" class="headerlink" title="第一次握手"></a>第一次握手</h3><p>建立连接时，<strong>客户端发送</strong> syn包（SYN=1，seq=x）到服务器，并 <strong>进入SYN_SENT</strong> 状态，等待服务器确认；SYN：同步序列编号，若没有收到对方的应答，状态变为CLOSED。</p>
+<h3 id="第二次握手"><a href="#第二次握手" class="headerlink" title="第二次握手"></a>第二次握手</h3><p>服务器收到syn包，必须确认客户的SYN（ACK=1，ack=x+1），同时自己也发送一个SYN包（SYN=1，seq=y），即SYN+ACK包，此时服务器 <strong>进入SYN_RECV</strong> 状态。</p>
+<h3 id="第三次握手"><a href="#第三次握手" class="headerlink" title="第三次握手"></a>第三次握手</h3><p>客户端收到服务器的SYN+ACK包，进入 <strong>ESTABLISHED（TCP连接成功）状态</strong> ，向服务器回送确认包ACK(ack=y+1，ACK=1，seq=x+1），此包发送完毕，服务器进入 <strong>ESTABLISHED（TCP连接成功）状态</strong>，完成三次握手。</p>
+<h2 id="TCP释放连接"><a href="#TCP释放连接" class="headerlink" title="TCP释放连接"></a>TCP释放连接</h2><blockquote>
+<p>tcp释放连接分为四步，通信之前均处于ESTABLISHED状态</p>
+</blockquote>
+<p><img src="http://blog.dingguojing.xyz/images/ruankao/tcp_4.png" alt="tcp释放连接"></p>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>源主机发送释放报文（FIN=1，seq=x），源主机进入 <strong>FIN-WAIT</strong> 状态</p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>目标主机接收报文发出确认报文（ACK=1，确认序号ack=x+1，自身序号seq=y），进入 <strong>CLOSE-WAIT</strong> 状态。这时候，源主机停止发送数据，目标主机仍然可以发送，TCP连接为半关闭状态（HALF-CLOSE）。源主机接收到ACK报文等待目标主机发出FIN报文，会持续一段时间。</p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>目标主机，发出释放报文（FIN=1，ACK=x+1，seq=z），目标主机进入 <strong>LAST-ACK</strong> 状态。</p>
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>源主机收到释放报文，发送确认报文（ACK=1，确认序号ACK=z+1，自身序号seq=x+1），等待一段时间后，源主机进入 <strong>CLOSED</strong> 状态</p>
+]]></content>
+      <categories>
+        <category>软考</category>
+        <category>传输层</category>
+      </categories>
+      <tags>
+        <tag>TCP</tag>
+      </tags>
+  </entry>
 </search>
