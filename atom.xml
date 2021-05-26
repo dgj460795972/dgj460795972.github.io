@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2021-05-26T11:30:56.237Z</updated>
+  <updated>2021-05-26T11:53:23.436Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>备忘录</title>
+    <link href="http://blog.dingguojing.xyz/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>http://blog.dingguojing.xyz/%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+    <published>2021-05-26T11:39:26.000Z</published>
+    <updated>2021-05-26T11:53:23.436Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+    <category term="不停" scheme="http://blog.dingguojing.xyz/tags/%E4%B8%8D%E5%81%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>TCP协议</title>

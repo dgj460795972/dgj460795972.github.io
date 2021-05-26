@@ -87,4 +87,23 @@
         <tag>TCP</tag>
       </tags>
   </entry>
+  <entry>
+    <title>备忘录</title>
+    <url>/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="8fd132cf874a350055ca0b4eb1254eb5b4ba69dee7d0c29bba21a42886760eb8">ba4ccabb47f4e111770a40fee985fbed8b4b0f4ef659bfb92af0245836181c5743ec088bbdd09246099f951da7be770443314b3672a30396bf1c145f5990ff6380997de24e805be1c4b88f0049740579cf82d877260be1db891fb457306aa26a14d149d3fc5106ecaee89c06f2ed75b0139f61e661640d0461bf9e97a11d01dc1db308d104f97b5bd7334e75ea4d76f349ae131f9d1786670837bfb43acf628dca7d0f249f403412281477f0648474b51d35c5f2d7c894b47b8f370d972a7efbf96516d4c2af24913e41de121bd58f3d6f9ce80932b10f99b7603c7cfd973cfb311c8b3b4b0b23d8c9b1af87636ee792a9193d7d72b23dbfcc30b4af9a14cd97b927a872b95198f2bdbd734100a61a815ab806ed4f269127f7e4d370f6e73ccca0ecda57dfefea5026571afa91b4b6cd8e6e2777feb3697907dd6029dfed655cdf8ef01d2732850248c6d7cfe14fce182af0565e926ad09373fda5ceba2b3bc281b83434916b3ffaf92c290a12087fdbf4568ae72125961acf639e7f2b3225afc2a02899932d06c40b219ae2579da5248902cdc0f4a2c9b0c9505ab9838f486ab46bfab160b57c15d29f3948855cd257b5ef35d11955d9cecafb06231103c60a36e0cbb18ab881055597b1ec7629e4a321f7cd772b0507250910b91e7083bcef3e104b4cd531d620555d4c871e7d5f20755fd2dc84deed9f7d3ad6e9e1af9c6bf36786d1dfb7080bc7eabfde024a3aed771648a57a9376410996ce9fbe1c3ef13f54c6f8df0c1df20bb4d364c0319f951952505e0f881db3535c89df866cb83d1488a69228d2c3a67398c1757d2178fdc888b487c5a32c7a6e0c10b856a79b55f78a51649cf1aa5de3a19f1f3e16a31aa9d166c8a7b6dc6fe7dcf23811b20708813e966ef3f739df8be24ddca0b2127d07a832f7973cf9cc950395c4401e8541e12450f47bb769e024dd66c7b77bf450466bfaa93cd19d42e1fb4000d68662dcf9b6642c54df9e4299a68b199d79153251f46b9bfb244dc7956efa32c0f42edc64a07f861a660ecdaaeb4c86ea7fcb6e426623b33fbe5b5e5a95e472ec7c76df7bf2f40eb512b11cdb731543a40dde90</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>不停</tag>
+      </tags>
+  </entry>
 </search>
