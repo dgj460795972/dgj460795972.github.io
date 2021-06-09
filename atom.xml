@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2021-05-26T11:53:23.436Z</updated>
+  <updated>2021-06-09T00:59:57.686Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python能做什么</title>
+    <link href="http://blog.dingguojing.xyz/python%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88/"/>
+    <id>http://blog.dingguojing.xyz/python%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88/</id>
+    <published>2021-06-09T00:39:33.000Z</published>
+    <updated>2021-06-09T00:59:57.686Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;学习一门编程语言，首先我们要知道可以用他来做什么，他主要应用在哪些方面，大而全，系统的去了解，之后从某一方面侧重点的去规划自己的目标。python可以从以下几个大的方面去概括，归纳。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>备忘录</title>

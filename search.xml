@@ -106,4 +106,20 @@
         <tag>不停</tag>
       </tags>
   </entry>
+  <entry>
+    <title>python能做什么</title>
+    <url>/python%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>学习一门编程语言，首先我们要知道可以用他来做什么，他主要应用在哪些方面，大而全，系统的去了解，之后从某一方面侧重点的去规划自己的目标。python可以从以下几个大的方面去概括，归纳。</p>
+<span id="more"></span>
+<h2 id="web开发"><a href="#web开发" class="headerlink" title="web开发"></a>web开发</h2><p>python可以用来进行web开发，比如我们学习到的django框架、flask框架。国内的一些网站，知乎、豆瓣、饿了吗、美团以及搜狐，国外的YouTube视频等都是用python编写的。</p>
+<h2 id="大数据处理"><a href="#大数据处理" class="headerlink" title="大数据处理"></a>大数据处理</h2><p>python可以进行数据分析，借助第三方的数据处理框架开发大数据处理平台，进行金融分析，量化交易处理。</p>
+<h2 id="网络爬虫"><a href="#网络爬虫" class="headerlink" title="网络爬虫"></a>网络爬虫</h2><p>python提供的标准支持库，可以从网页上爬到我们想要的数据，此外，python还有大量的爬虫框架，可以让我们去选择，获取网上的各种数据。</p>
+<h2 id="自动运维开发"><a href="#自动运维开发" class="headerlink" title="自动运维开发"></a>自动运维开发</h2><h2 id="人工智能"><a href="#人工智能" class="headerlink" title="人工智能"></a>人工智能</h2><h2 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h2><h2 id="游戏开发"><a href="#游戏开发" class="headerlink" title="游戏开发"></a>游戏开发</h2><h2 id="图形、图像处理"><a href="#图形、图像处理" class="headerlink" title="图形、图像处理"></a>图形、图像处理</h2><h2 id="数据库编程"><a href="#数据库编程" class="headerlink" title="数据库编程"></a>数据库编程</h2>]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
 </search>
