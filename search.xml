@@ -138,4 +138,31 @@
         <tag>python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>python基础面试</title>
+    <url>/python%E9%9D%A2%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>python面试，实际就是对python知识掌握能力的一种鉴定。通过面试，可以更好的掌握自己学到的知识。</p>
+<span id="more"></span>
+<h2 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h2><ol>
+<li>import module 导入模块</li>
+<li>from module import member 从模块中导入某成员</li>
+<li>from module import *  从模块中导入所有的成员</li>
+<li>import module as 别名  增加别名的方式</li>
+</ol>
+<h2 id="设置python模块的搜索路径"><a href="#设置python模块的搜索路径" class="headerlink" title="设置python模块的搜索路径"></a>设置python模块的搜索路径</h2><ol>
+<li>设置PYTHONPATN变量 PYTHONPATH = ‘path’</li>
+<li>通过sys.path临时设置python模块包的路径，sys.path.append(‘path’)</li>
+<li>在python安装路径site-packages下增加一个后缀为.pth文件，增加为模块包的路径</li>
+</ol>
+<h2 id="字符串和变量的连接"><a href="#字符串和变量的连接" class="headerlink" title="字符串和变量的连接"></a>字符串和变量的连接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 字符串和字符串的连接</span><br><span class="line">s1 = &#x27;hello&#x27;</span><br><span class="line">s2 = &#x27;world&#x27;</span><br><span class="line">s = s1 + s2   # 使用+号</span><br><span class="line">s = &#x27;hello&#x27;&#x27;world&#x27; # 直接连接</span><br><span class="line">s = print(s1, s2) # 使用print()函数</span><br><span class="line">s = &#x27;%s %s&#x27; % (s1, s2) # 格式化</span><br><span class="line">s = &#x27;&#x27;.join([s1, s2]) # 使用join</span><br><span class="line"># 通过格式化可以实现字符串和其他变量类型的连接，使用str()函数进行连接</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="进制之间的转换"><a href="#进制之间的转换" class="headerlink" title="进制之间的转换"></a>进制之间的转换</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n = 123</span><br><span class="line">n1 = 0b1101</span><br><span class="line">n2 = 0o723</span><br><span class="line">n3 = 0xabc</span><br><span class="line"># 进制转换函数</span><br><span class="line">bin()、oct()、hex()、int()四个函数</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>python面试</category>
+      </categories>
+      <tags>
+        <tag>python面试</tag>
+      </tags>
+  </entry>
 </search>

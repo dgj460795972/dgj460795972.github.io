@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2021-06-10T10:05:35.052Z</updated>
+  <updated>2021-06-18T10:22:11.341Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python基础面试</title>
+    <link href="http://blog.dingguojing.xyz/python%E9%9D%A2%E8%AF%95/"/>
+    <id>http://blog.dingguojing.xyz/python%E9%9D%A2%E8%AF%95/</id>
+    <published>2021-06-18T01:39:52.000Z</published>
+    <updated>2021-06-18T10:22:11.341Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;python面试，实际就是对python知识掌握能力的一种鉴定。通过面试，可以更好的掌握自己学到的知识。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
+    
+    <category term="python面试" scheme="http://blog.dingguojing.xyz/categories/python/python%E9%9D%A2%E8%AF%95/"/>
+    
+    
+    <category term="python面试" scheme="http://blog.dingguojing.xyz/tags/python%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>python类中的方法</title>
