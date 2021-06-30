@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2021-06-26T06:13:41.214Z</updated>
+  <updated>2021-06-30T02:51:11.550Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python连接数据库</title>
+    <link href="http://blog.dingguojing.xyz/python%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://blog.dingguojing.xyz/python%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
+    <published>2021-06-30T02:27:00.000Z</published>
+    <updated>2021-06-30T02:51:11.550Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;爬虫中储存数据的四种方式，有json，csv，excel，mysql数据库等方式。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
+    
+    <category term="python爬虫" scheme="http://blog.dingguojing.xyz/categories/python/python%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>正则表达式</title>

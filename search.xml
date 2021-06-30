@@ -182,4 +182,23 @@
         <tag>python正则表达式</tag>
       </tags>
   </entry>
+  <entry>
+    <title>python连接数据库</title>
+    <url>/python%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>爬虫中储存数据的四种方式，有json，csv，excel，mysql数据库等方式。</p>
+<span id="more"></span>
+<h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="comment"># 连接数据库,参数有主机，端口，用户名，密码，数据表，编码方式,</span></span><br><span class="line">conn= pymysql.connect(host=<span class="string">&#x27;127.0.0.1&#x27;</span>, user=<span class="string">&#x27;root&#x27;</span>, port=<span class="number">3306</span>, password=<span class="string">&#x27;password&#x27;</span>, database=<span class="string">&#x27;csdn_crawler&#x27;</span>)</span><br><span class="line">cusor = conn.cursor()</span><br></pre></td></tr></table></figure>
+<h3 id="查询数据库"><a href="#查询数据库" class="headerlink" title="查询数据库"></a>查询数据库</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询，增删改查通过cusor来操作</span></span><br><span class="line">sql = <span class="string">&#x27;select id, title from article&#x27;</span></span><br><span class="line">result = cusor.execute(sql)</span><br><span class="line">result = cusor.fetchone()</span><br><span class="line"><span class="comment"># result = cusor.fetchall()</span></span><br><span class="line"><span class="comment"># result = cusor.fetchmany(2)</span></span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
+<h3 id="插入数据库"><a href="#插入数据库" class="headerlink" title="插入数据库"></a>插入数据库</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 插入数据</span></span><br><span class="line"><span class="comment"># sql = &quot;insert into article (id, title, content) values (null, &#x27;dgj&#x27;, &#x27;dgj zr&#x27;)&quot;</span></span><br><span class="line">sql = <span class="string">&quot;insert into article (id, title, content) values (null, %s, %s)&quot;</span></span><br><span class="line">title = <span class="string">&#x27;zr&#x27;</span></span><br><span class="line">content = <span class="string">&#x27;zr dgj&#x27;</span></span><br><span class="line">cusor.execute(sql, (title, content))</span><br><span class="line">conn.commit()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
+<h3 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除数据</span></span><br><span class="line">sql = <span class="string">&quot;delete from article where id = 1&quot;</span></span><br><span class="line">cusor.execute(sql)</span><br><span class="line">conn.commit()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
+<h3 id="更新数据库"><a href="#更新数据库" class="headerlink" title="更新数据库"></a>更新数据库</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 更新数据库</span></span><br><span class="line">sql = <span class="string">&quot;update article set title=&#x27;丁梓翊&#x27; where id=2&quot;</span></span><br><span class="line">cusor.execute(sql)</span><br><span class="line">conn.commit()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>python爬虫</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
 </search>
