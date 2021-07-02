@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2021-06-30T08:29:14.101Z</updated>
+  <updated>2021-07-02T08:58:11.416Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Execl和CSV存储数据</title>
+    <link href="http://blog.dingguojing.xyz/Execl%E5%92%8CCSV%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE/"/>
+    <id>http://blog.dingguojing.xyz/Execl%E5%92%8CCSV%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE/</id>
+    <published>2021-07-01T02:24:30.000Z</published>
+    <updated>2021-07-02T08:58:11.416Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;数据一般通过excel，csv方式存储，在python中如何使用excel，csv读取写入数据呢？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
+    
+    <category term="python爬虫" scheme="http://blog.dingguojing.xyz/categories/python/python%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="Execel" scheme="http://blog.dingguojing.xyz/tags/Execel/"/>
+    
+    <category term="CSV" scheme="http://blog.dingguojing.xyz/tags/CSV/"/>
+    
+  </entry>
   
   <entry>
     <title>python中的json包</title>
