@@ -261,4 +261,26 @@
     <url>/urllib%E5%92%8Crequests%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
   </entry>
+  <entry>
+    <title>pip设置永久国内镜像源</title>
+    <url>/pip%E8%AE%BE%E7%BD%AE%E6%B0%B8%E4%B9%85%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-创建pip文件"><a href="#1-创建pip文件" class="headerlink" title="1. 创建pip文件"></a>1. 创建pip文件</h2><ul>
+<li><strong>win+r</strong>，输入 <strong>%appdata%</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Users\dell\AppData\Roaming</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>新建pip文件夹</li>
+<li>在文件夹中编辑pip.ini文件</li>
+</ul>
+<h2 id="2-编辑pip-ini文件，保存"><a href="#2-编辑pip-ini文件，保存" class="headerlink" title="2. 编辑pip.ini文件，保存"></a>2. 编辑pip.ini文件，保存</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line">index_url = https://pypi.doubanio.com/simple</span><br><span class="line">trusted-host = pypi.doubanio.com</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>pip</tag>
+      </tags>
+  </entry>
 </search>
