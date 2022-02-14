@@ -28,19 +28,6 @@
       </tags>
   </entry>
   <entry>
-    <title>python框架</title>
-    <url>/python%E6%A1%86%E6%9E%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>框架的学习，可以让我们更便捷的开发一个网站。目前，python框架使用最多的是Django框架和Flask框架。</p>
-<span id="more"></span>
-<h2 id="Django框架"><a href="#Django框架" class="headerlink" title="Django框架"></a>Django框架</h2><h2 id="Flask框架"><a href="#Flask框架" class="headerlink" title="Flask框架"></a>Flask框架</h2>]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TCP协议</title>
     <url>/TCP%E5%8D%8F%E8%AE%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>TCP，是一种可靠的、面向连接的<strong>字节流</strong>服务。通过<strong>序号</strong>对发送的数据报进行标记，同时对每个数据段进行<strong>确认</strong>。</p>
@@ -303,6 +290,124 @@
       </categories>
       <tags>
         <tag>pip</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>django框架</title>
+    <url>/django%E6%A1%86%E6%9E%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>框架的学习，可以让我们更便捷的开发一个网站。目前，python框架使用最多的是Django框架和Flask框架。</p>
+<span id="more"></span>
+
+<h2 id="Django框架"><a href="#Django框架" class="headerlink" title="Django框架"></a>Django框架</h2><h3 id="Django框架的特点"><a href="#Django框架的特点" class="headerlink" title="Django框架的特点"></a>Django框架的特点</h3><ol>
+<li>创建一个应用</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">django-admin startproject dgj</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>创建子应用并注册</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python manager.py startapp users</span><br><span class="line"></span><br><span class="line">INSTALLED_APPS = [</span><br><span class="line">    <span class="string">&#x27;django.contrib.admin&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;django.contrib.auth&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;django.contrib.contenttypes&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;django.contrib.sessions&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;django.contrib.messages&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;django.contrib.staticfiles&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;dzy.apps.DzyConfig&#x27;</span>,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在视图下编辑业务代码，并注册路由</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> dzy.views <span class="keyword">import</span> index</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">&#x27;admin/&#x27;</span>, admin.site.urls),</span><br><span class="line">    path(<span class="string">&#x27;index/&#x27;</span>, index),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>时区、语言的配置</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">LANGUAGE_CODE = <span class="string">&#x27;zh-hans&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># TIME_ZONE = &#x27;UTC&#x27;</span></span><br><span class="line">TIME_ZONE = <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>静态文件的配置</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">STATIC_URL = <span class="string">&#x27;/static/&#x27;</span></span><br><span class="line"><span class="comment"># 静态文件的位置</span></span><br><span class="line">STATICFILES_DIRS = [</span><br><span class="line">    os.path.join(BASE_DIR, <span class="string">&#x27;static_files&#x27;</span>)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>路由的配置</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在路由配置里面，增加函数视图，增加类视图，增加应用配置视图</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">&#x27;admin/&#x27;</span>, admin.site.urls),</span><br><span class="line">    path(<span class="string">&#x27;dzy/&#x27;</span>, include(<span class="string">&#x27;dzy.urls&#x27;</span>))</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>请求和响应</li>
+</ol>
+<ul>
+<li>url请求参数</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>提取url特定部分，比如/weather/beijing/<span class="number">2021</span> <span class="string">r&#x27;^weather/(?P&lt;city&gt;[a-z]+)/(?P&lt;year&gt;\d&#123;4&#125;)/$&#x27;</span></span><br><span class="line"><span class="number">2.</span>查询字符串(query string),key1=value1&amp;key2=value2 request.method</span><br><span class="line"><span class="number">3.</span>请求体(body)中数据，json, request.body</span><br><span class="line"><span class="number">4.</span>http中报文头(header),User-Agent,Referer request.META</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>HttpResponse</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">json_view</span>(<span class="params">request</span>):</span></span><br><span class="line">    json_str = &#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;dgj&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;class&quot;</span>:<span class="string">&quot;django2009&quot;</span>&#125;</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># redirect()</span></span><br><span class="line">    <span class="keyword">return</span> JsonResponse(json_str)</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>cookie和session</li>
+</ol>
+<ul>
+<li>cookie</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cookieview</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">    res = HttpResponse(<span class="string">&#x27;OK&#x27;</span>)</span><br><span class="line">    res.set_cookie(<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;dgj&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">readcookie</span>(<span class="params">request</span>):</span></span><br><span class="line">    name = request.COOKIES.get(<span class="string">&#x27;name&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(name)</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">&#x27;读取成功&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>session</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">setsession</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">    request.session[<span class="string">&#x27;name&#x27;</span>] = <span class="string">&#x27;dgj&#x27;</span></span><br><span class="line">    request.session[<span class="string">&#x27;age&#x27;</span>] = <span class="number">20</span></span><br><span class="line">    <span class="comment"># 设置session保存时间</span></span><br><span class="line">    request.session.set_expiry(<span class="number">120</span>)</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">&quot;OK&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li>类视图和中间件</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 请求之前，响应之后</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">simple_middleware</span>(<span class="params">get_response</span>):</span></span><br><span class="line">    <span class="comment"># 此处编写的代码仅在Django第一次配置和初始化的时候执行一次。</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">middleware</span>(<span class="params">request</span>):</span></span><br><span class="line">        <span class="comment"># 此处编写的代码会在每个请求处理视图前被调用。</span></span><br><span class="line"></span><br><span class="line">        response = get_response(request)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 此处编写的代码会在每个请求处理视图之后被调用。</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> response</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> middleware</span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>文件上传</li>
+</ol>
+<p>在模板中 创建一个form表单 需要特别注意的是，在有文件上传的表单中，method的属性必须是post 而且必须指定他的enctype为“multipart/form-data” 表明不对字符进行编码，具体的代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form action=&quot;/upload/&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;</span><br><span class="line">    文件上传：&lt;input type=&quot;file&quot; name=&quot;files&quot; class=&quot;file_up&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;submit&quot; value=&quot;上传&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>.read() 从文件读取整个上传的数据，这个方法只适合小文件</p>
+<p>chunks() 按块返回文件，通过在for循环中进行迭代，可以将大文件按块写入到服务器中</p>
+<p>multiple_chunks() 这个方法根据文件对象的大小，返回True或者False当文件大于2.5M(默认为2.5M，可以调整)时，该方法返回True,否则返回False因此可以根据该方法来选择选用read方法读取还是采用chunks方法。</p>
+<p>文件对象.name 这是个属性 不是方法 该属性得到上传的文件名 包括后缀如weizi.py</p>
+<p>文件对象.size 这个也是个属性，得到上传文件的大小。</p>
+<ol start="11">
+<li>template</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 模板渲染</span></span><br><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span>(<span class="params">request</span>):</span></span><br><span class="line">    context=&#123;<span class="string">&#x27;city&#x27;</span>: <span class="string">&#x27;北京&#x27;</span>&#125;</span><br><span class="line">    <span class="keyword">return</span> render(request,<span class="string">&#x27;index.html&#x27;</span>,context)</span><br></pre></td></tr></table></figure>
+
+<ol start="12">
+<li>数据库</li>
+</ol>
+<ul>
+<li>关联查询，一对多</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> book.models <span class="keyword">import</span> BookInfo,HeroInfo</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = BookInfo.objects.get(<span class="built_in">id</span>=<span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b</span><br><span class="line">&lt;BookInfo: 天龙八部&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b.heroinfo_set.<span class="built_in">all</span>()</span><br><span class="line">&lt;QuerySet [&lt;HeroInfo: 乔峰&gt;, &lt;HeroInfo: 段誉&gt;, &lt;HeroInfo: 虚竹&gt;, &lt;HeroInfo: 王语嫣&gt;]&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>多对一的查询，直接查询外键</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>h = HeroInfo.objects.get(<span class="built_in">id</span>=<span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>h</span><br><span class="line">&lt;HeroInfo: 黄蓉&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>h.hbook</span><br><span class="line">&lt;BookInfo: 射雕英雄传&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改数据</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 对象修改，需要使用save方法保存</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>h = HeroInfo.objects.get(pk=<span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>h</span><br><span class="line">&lt;HeroInfo: 黄蓉&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>h.hname = <span class="string">&#x27;蓉妹妹&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>h.save()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 类对象修改，精确查找没有update方法，使用filter</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> book.models <span class="keyword">import</span> BookInfo,HeroInfo</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>HeroInfo.objects.get(<span class="built_in">id</span>=<span class="number">2</span>).update(hname=<span class="string">&#x27;黄蓉&#x27;</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;console&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AttributeError: <span class="string">&#x27;HeroInfo&#x27;</span> <span class="built_in">object</span> has no attribute <span class="string">&#x27;update&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>HeroInfo.objects.<span class="built_in">filter</span>(<span class="built_in">id</span>=<span class="number">2</span>).update(hname=<span class="string">&#x27;黄蓉&#x27;</span>)</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在视图里进行orm操作</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span>(<span class="params">request</span>):</span></span><br><span class="line">    book_list = []</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        book_query = BookInfo.objects.<span class="built_in">all</span>()</span><br><span class="line">        <span class="built_in">print</span>(book_query)</span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> book_query:</span><br><span class="line">            book_dict = &#123;&#125;</span><br><span class="line">            book_dict[<span class="string">&#x27;title&#x27;</span>] = book.btitle</span><br><span class="line">            book_dict[<span class="string">&#x27;bpub_date&#x27;</span>] = book.bpub_date</span><br><span class="line">            book_list.append(book_dict)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(e)</span><br><span class="line">    <span class="built_in">print</span>(book_list)</span><br><span class="line">    <span class="keyword">return</span> JsonResponse(book_list, safe=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>python框架</category>
+        <category>django框架</category>
+      </categories>
+      <tags>
+        <tag>django</tag>
       </tags>
   </entry>
 </search>

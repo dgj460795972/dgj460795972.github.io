@@ -288,11 +288,11 @@
   </entry>
   
   <entry>
-    <title>python框架</title>
-    <link href="http://blog.dingguojing.xyz/python%E6%A1%86%E6%9E%B6/"/>
-    <id>http://blog.dingguojing.xyz/python%E6%A1%86%E6%9E%B6/</id>
+    <title>django框架</title>
+    <link href="http://blog.dingguojing.xyz/django%E6%A1%86%E6%9E%B6/"/>
+    <id>http://blog.dingguojing.xyz/django%E6%A1%86%E6%9E%B6/</id>
     <published>2021-05-25T11:11:32.000Z</published>
-    <updated>2021-05-25T11:41:52.028Z</updated>
+    <updated>2022-02-14T08:53:14.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;框架的学习，可以让我们更便捷的开发一个网站。目前，python框架使用最多的是Django框架和Flask框架。&lt;/p&gt;</summary>
@@ -301,8 +301,12 @@
     
     <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
     
+    <category term="python框架" scheme="http://blog.dingguojing.xyz/categories/python/python%E6%A1%86%E6%9E%B6/"/>
     
-    <category term="python" scheme="http://blog.dingguojing.xyz/tags/python/"/>
+    <category term="django框架" scheme="http://blog.dingguojing.xyz/categories/python/python%E6%A1%86%E6%9E%B6/django%E6%A1%86%E6%9E%B6/"/>
+    
+    
+    <category term="django" scheme="http://blog.dingguojing.xyz/tags/django/"/>
     
   </entry>
   
