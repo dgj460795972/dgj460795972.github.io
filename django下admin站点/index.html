@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>pip设置永久国内镜像源 |  不停</title>
+      <title>django下admin站点 |  不停</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -52,7 +52,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-pip设置永久国内镜像源"
+  id="post-django下admin站点"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -63,7 +63,7 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  pip设置永久国内镜像源
+  django下admin站点
 </h1>
  
 
@@ -71,11 +71,11 @@ var _hmt = _hmt || [];
     </header>
      
     <div class="article-meta">
-      <a href="/pip%E8%AE%BE%E7%BD%AE%E6%B0%B8%E4%B9%85%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/" class="article-date">
-  <time datetime="2022-02-09T05:14:20.000Z" itemprop="datePublished">2022-02-09</time>
+      <a href="/django%E4%B8%8Badmin%E7%AB%99%E7%82%B9/" class="article-date">
+  <time datetime="2022-02-14T15:15:01.000Z" itemprop="datePublished">2022-02-14</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/python/">python</a>
+    <a class="article-category-link" href="/categories/python/">python</a> / <a class="article-category-link" href="/categories/python/python%E6%A1%86%E6%9E%B6/">python框架</a> / <a class="article-category-link" href="/categories/python/python%E6%A1%86%E6%9E%B6/django%E6%A1%86%E6%9E%B6/">django框架</a>
   </div>
   
 <div class="word_count">
@@ -83,7 +83,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">95</span>
+            <span class="post-count">298</span>
         </span>
     </span>
 
@@ -107,22 +107,18 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="1-创建pip文件"><a href="#1-创建pip文件" class="headerlink" title="1. 创建pip文件"></a>1. 创建pip文件</h2><ul>
-<li><strong>win+r</strong>，输入 <strong>%appdata%</strong></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\dell\AppData\Roaming</span><br></pre></td></tr></table></figure>
+  <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>django自带admin站点。</p>
+<span id="more"></span>
 
-<ul>
-<li>新建pip文件夹</li>
-<li>在文件夹中编辑pip.ini文件</li>
-</ul>
-<h2 id="2-编辑pip-ini文件，保存"><a href="#2-编辑pip-ini文件，保存" class="headerlink" title="2. 编辑pip.ini文件，保存"></a>2. 编辑pip.ini文件，保存</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line">index_url = https://pypi.doubanio.com/simple</span><br><span class="line">trusted-host = pypi.doubanio.com</span><br></pre></td></tr></table></figure>
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manager.py createsuperuser</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-更改mkvirtualenv生成虚拟环境目录"><a href="#3-更改mkvirtualenv生成虚拟环境目录" class="headerlink" title="3. 更改mkvirtualenv生成虚拟环境目录"></a>3. 更改mkvirtualenv生成虚拟环境目录</h2><ul>
-<li>在环境变量中编辑<strong>WORKON_HOME</strong>变量</li>
-<li>设置自己虚拟环境的生成目录</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\Program Files\Virtualenv</span><br></pre></td></tr></table></figure>
+<h2 id="在admin-py下进行配置"><a href="#在admin-py下进行配置" class="headerlink" title="在admin.py下进行配置"></a>在admin.py下进行配置</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 注册后台数据模型的两种方式</span></span><br><span class="line"><span class="keyword">from</span> book.models <span class="keyword">import</span> BookInfo, HeroInfo</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BookInfoAdmin</span>(<span class="params">admin.ModelAdmin</span>):</span></span><br><span class="line">    list_display = [<span class="string">&#x27;btitle&#x27;</span>,<span class="string">&#x27;id&#x27;</span>,<span class="string">&#x27;bread&#x27;</span>,<span class="string">&#x27;bpub_date&#x27;</span>,<span class="string">&#x27;is_delete&#x27;</span>] <span class="comment"># 数据列展示</span></span><br><span class="line">    actions_on_bottom = <span class="literal">True</span></span><br><span class="line">    actions_on_top = <span class="literal">False</span> <span class="comment"># 设置表操作方式</span></span><br><span class="line">    fields = [<span class="string">&#x27;btitle&#x27;</span>, <span class="string">&#x27;bread&#x27;</span>,<span class="string">&#x27;bpub_date&#x27;</span>]<span class="comment"># 数据编辑显示</span></span><br><span class="line">    fieldsets = (</span><br><span class="line">        (<span class="string">&#x27;基本&#x27;</span>, &#123;<span class="string">&#x27;fields&#x27;</span>: [<span class="string">&#x27;btitle&#x27;</span>, <span class="string">&#x27;bpub_date&#x27;</span>]&#125;),</span><br><span class="line">        (<span class="string">&#x27;高级&#x27;</span>, &#123;</span><br><span class="line">            <span class="string">&#x27;fields&#x27;</span>: [<span class="string">&#x27;bread&#x27;</span>, <span class="string">&#x27;bcomment&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;classes&#x27;</span>: (<span class="string">&#x27;collapse&#x27;</span>,)  <span class="comment"># 是否折叠显示</span></span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">@admin.register(<span class="params">HeroInfo</span>)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HeroInfoAdmin</span>(<span class="params">admin.ModelAdmin</span>):</span></span><br><span class="line">    list_display = [<span class="string">&#x27;hbook&#x27;</span>,<span class="string">&#x27;hname&#x27;</span>,<span class="string">&#x27;hgender&#x27;</span>,<span class="string">&#x27;hcomment&#x27;</span>,<span class="string">&#x27;is_delete&#x27;</span>]</span><br><span class="line">    list_per_page = <span class="number">5</span> <span class="comment"># 设置分页</span></span><br><span class="line"></span><br><span class="line">admin.site.register(BookInfo, BookInfoAdmin)</span><br><span class="line"><span class="comment"># admin.site.register(HeroInfo, HeroInfoAdmin)</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="关联对象，一对多下的数据展示页面"><a href="#关联对象，一对多下的数据展示页面" class="headerlink" title="关联对象，一对多下的数据展示页面"></a>关联对象，一对多下的数据展示页面</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HeroInfoStackInline</span>(<span class="params">admin.StackedInline</span>):</span></span><br><span class="line">    <span class="comment"># 块展示</span></span><br><span class="line">    model = HeroInfo  <span class="comment"># 要编辑的对象</span></span><br><span class="line">    extra = <span class="number">1</span>  <span class="comment"># 附加编辑的数量</span></span><br><span class="line">    </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HeroInfoTabularInline</span>(<span class="params">admin.TabularInline</span>):</span></span><br><span class="line">    <span class="comment"># 表格展示</span></span><br><span class="line">    model = HeroInfo</span><br><span class="line">    extra = <span class="number">1</span></span><br><span class="line">    </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BookInfoAdmin</span>(<span class="params">admin.ModelAdmin</span>):</span></span><br><span class="line">    ...</span><br><span class="line">    inlines = [HeroInfoStackInline]<span class="comment">#调用</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="设置站点信息的展示"><a href="#设置站点信息的展示" class="headerlink" title="设置站点信息的展示"></a>设置站点信息的展示</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">admin.site.site_header 设置网站页头</span><br><span class="line">admin.site.site_title 设置页面标题</span><br><span class="line">admin.site.index_title 设置首页标语</span><br></pre></td></tr></table></figure>
+
+<h2 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BookInfo</span>(<span class="params">models.Model</span>):</span></span><br><span class="line">    ...</span><br><span class="line">    image = models.ImageField(upload_to=<span class="string">&#x27;books&#x27;</span>, verbose_name=<span class="string">&#x27;图片封面&#x27;</span>, null=<span class="literal">True</span>,blank=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 
  
       <!-- reward -->
@@ -194,12 +190,12 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.dingguojing.xyz/pip%E8%AE%BE%E7%BD%AE%E6%B0%B8%E4%B9%85%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.dingguojing.xyz/django%E4%B8%8Badmin%E7%AB%99%E7%82%B9/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pip/" rel="tag">pip</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li></ul>
 
     </footer>
   </div>
@@ -207,19 +203,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/django%E4%B8%8Badmin%E7%AB%99%E7%82%B9/" class="article-nav-link">
+      <a href="/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            django下admin站点
+            django中drf使用
           
         </div>
       </a>
     
     
-      <a href="/pyhon%E7%94%9F%E6%88%90%E5%99%A8/" class="article-nav-link">
+      <a href="/pip%E8%AE%BE%E7%BD%AE%E6%B0%B8%E4%B9%85%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">pyhon生成器</div>
+        <div class="article-nav-title">pip设置永久国内镜像源</div>
       </a>
     
   </nav>

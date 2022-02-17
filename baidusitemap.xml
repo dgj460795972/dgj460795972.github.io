@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.dingguojing.xyz/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2022-02-17</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.dingguojing.xyz/django%E4%B8%8Badmin%E7%AB%99%E7%82%B9/</loc>
+    <lastmod>2022-02-15</lastmod>
+  </url>
+  <url>
     <loc>http://blog.dingguojing.xyz/django%E6%A1%86%E6%9E%B6/</loc>
     <lastmod>2022-02-14</lastmod>
   </url>
