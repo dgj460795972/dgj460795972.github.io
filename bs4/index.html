@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>django中drf使用 |  不停</title>
+      <title>bs4 |  不停</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -52,7 +52,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-django中drf使用"
+  id="post-bs4"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -63,7 +63,7 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  django中drf使用
+  bs4
 </h1>
  
 
@@ -71,11 +71,11 @@ var _hmt = _hmt || [];
     </header>
      
     <div class="article-meta">
-      <a href="/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/" class="article-date">
-  <time datetime="2022-02-17T08:21:28.000Z" itemprop="datePublished">2022-02-17</time>
+      <a href="/bs4/" class="article-date">
+  <time datetime="2022-04-01T08:38:58.000Z" itemprop="datePublished">2022-04-01</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/python/">python</a> / <a class="article-category-link" href="/categories/python/python%E6%A1%86%E6%9E%B6/">python框架</a> / <a class="article-category-link" href="/categories/python/python%E6%A1%86%E6%9E%B6/django/">django</a>
+    <a class="article-category-link" href="/categories/python/">python</a> / <a class="article-category-link" href="/categories/python/python%E7%88%AC%E8%99%AB/">python爬虫</a>
   </div>
   
 <div class="word_count">
@@ -83,7 +83,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">260</span>
+            <span class="post-count">1.3k</span>
         </span>
     </span>
 
@@ -92,7 +92,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">5 分钟</span>
         </span>
     </span>
 </div>
@@ -107,18 +107,64 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>通过drf框架写一个用户注册的示例</p>
+  <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>和 lxml 一样，Beautiful Soup 也是一个HTML/XML的解析器，主要的功能也是如何解析和提取 HTML/XML 数据。</p>
 <span id="more"></span>
 
-<h2 id="建立用户数据模型"><a href="#建立用户数据模型" class="headerlink" title="建立用户数据模型"></a>建立用户数据模型</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserInfo</span>(<span class="params">models.Model</span>):</span></span><br><span class="line">    mobile = models.CharField(max_length=<span class="number">11</span>, verbose_name=<span class="string">&#x27;手机&#x27;</span>,unique=<span class="literal">True</span>)</span><br><span class="line">    password = models.CharField(verbose_name=<span class="string">&#x27;密码&#x27;</span>, max_length=<span class="number">11</span>)</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        db_table = <span class="string">&#x27;tb_users&#x27;</span></span><br><span class="line">        verbose_name = <span class="string">&#x27;用户表&#x27;</span></span><br><span class="line">        verbose_name_plural = verbose_name</span><br></pre></td></tr></table></figure>
+<h2 id="安装和文档："><a href="#安装和文档：" class="headerlink" title="安装和文档："></a>安装和文档：</h2><p>安装：<br>pip install bs4</p>
+<p>中文文档：<a target="_blank" rel="noopener" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html">https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html</a></p>
+<h2 id="几大解析工具对比："><a href="#几大解析工具对比：" class="headerlink" title="几大解析工具对比："></a>几大解析工具对比：</h2><h2 id="简单使用："><a href="#简单使用：" class="headerlink" title="简单使用："></a>简单使用：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">html = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">&lt;html&gt;&lt;head&gt;&lt;title&gt;The Dormouse&#x27;s story&lt;/title&gt;&lt;/head&gt;</span></span><br><span class="line"><span class="string">&lt;body&gt;</span></span><br><span class="line"><span class="string">&lt;p class=&quot;title&quot; name=&quot;dromouse&quot;&gt;&lt;b&gt;The Dormouse&#x27;s story&lt;/b&gt;&lt;/p&gt;</span></span><br><span class="line"><span class="string">&lt;p class=&quot;story&quot;&gt;Once upon a time there were three little sisters; and their names were</span></span><br><span class="line"><span class="string">&lt;a href=&quot;http://example.com/elsie&quot; class=&quot;sister&quot; id=&quot;link1&quot;&gt;&lt;!-- Elsie --&gt;&lt;/a&gt;,</span></span><br><span class="line"><span class="string">&lt;a href=&quot;http://example.com/lacie&quot; class=&quot;sister&quot; id=&quot;link2&quot;&gt;Lacie&lt;/a&gt; and</span></span><br><span class="line"><span class="string">&lt;a href=&quot;http://example.com/tillie&quot; class=&quot;sister&quot; id=&quot;link3&quot;&gt;Tillie&lt;/a&gt;;</span></span><br><span class="line"><span class="string">and they lived at the bottom of a well.&lt;/p&gt;</span></span><br><span class="line"><span class="string">&lt;p class=&quot;story&quot;&gt;...&lt;/p&gt;</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">soup = BeautifulSoup(html,<span class="string">&#x27;lxml&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(soup.prettify())</span><br></pre></td></tr></table></figure>
 
-<h2 id="创建视图模型"><a href="#创建视图模型" class="headerlink" title="创建视图模型"></a>创建视图模型</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RegView</span>(<span class="params">CreateAPIView, ListAPIView</span>):</span></span><br><span class="line">    serializer_class = UserInfoSerializer</span><br><span class="line">    queryset = UserInfo.objects.<span class="built_in">all</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="常见的四种对象："><a href="#常见的四种对象：" class="headerlink" title="常见的四种对象："></a>常见的四种对象：</h2><ol>
+<li>Tag：BeautifulSoup中所有的标签都是Tag类型，并且BeautifulSoup的对象其实本质上也是一个Tag类型。所以其实一些方法比如find、find_all并不是BeautifulSoup的，而是Tag的。</li>
+<li>NavigableString：继承自python中的str，用起来就跟使用python的str是一样的。</li>
+<li>BeautifulSoup：继承自Tag。用来生成BeaufifulSoup树的。对于一些查找方法，比如find、select这些，其实还是Tag的。</li>
+<li>Comment：这个也没什么好说，就是继承自NavigableString。</li>
+</ol>
+<h2 id="contents和children："><a href="#contents和children：" class="headerlink" title="contents和children："></a>contents和children：</h2><p>返回某个标签下的直接子元素，其中也包括字符串。他们两的区别是：contents返回来的是一个列表，children返回的是一个迭代器。</p>
+<h2 id="string和strings、stripped-strings属性以及get-text方法"><a href="#string和strings、stripped-strings属性以及get-text方法" class="headerlink" title="string和strings、stripped_strings属性以及get_text方法"></a>string和strings、stripped_strings属性以及get_text方法</h2><ol>
+<li>string：获取某个标签下的非标签字符串。返回来的是个字符串。如果这个标签下有多行字符，那么就不能获取到了。</li>
+<li>strings：获取某个标签下的子孙非标签字符串。返回来的是个生成器。</li>
+<li>stripped_strings：获取某个标签下的子孙非标签字符串，会去掉空白字符。返回来的是个生成器。</li>
+<li>get_text：获取某个标签下的子孙非标签字符串，以普通字符串形式返回</li>
+</ol>
+<h2 id="find-all的使用："><a href="#find-all的使用：" class="headerlink" title="find_all的使用："></a>find_all的使用：</h2><ol>
+<li>在提取标签的时候，第一个参数是标签的名字。然后如果在提取标签的时候想要使用标签属性进行过滤，那么可以在这个方法中通过关键字参数的形式，将属性的名字以及对应的值传进去。或者是使用<code>attrs</code>属性，将所有的属性以及对应的值放在一个字典中传给<code>attrs</code>属性。</li>
+<li>有些时候，在提取标签的时候，不想提取那么多，那么可以使用<code>limit</code>参数。限制提取多少个。</li>
+</ol>
+<h2 id="find与find-all的区别："><a href="#find与find-all的区别：" class="headerlink" title="find与find_all的区别："></a>find与find_all的区别：</h2><ol>
+<li>find：找到第一个满足条件的标签就返回。说白了，就是只会返回一个元素。</li>
+<li>find_all:将所有满足条件的标签都返回。说白了，会返回很多标签（以列表的形式）。</li>
+</ol>
+<h2 id="使用find和find-all的过滤条件："><a href="#使用find和find-all的过滤条件：" class="headerlink" title="使用find和find_all的过滤条件："></a>使用find和find_all的过滤条件：</h2><ol>
+<li>关键字参数：将属性的名字作为关键字参数的名字，以及属性的值作为关键字参数的值进行过滤。</li>
+<li>attrs参数：将属性条件放到一个字典中，传给attrs参数。</li>
+</ol>
+<h2 id="获取标签的属性："><a href="#获取标签的属性：" class="headerlink" title="获取标签的属性："></a>获取标签的属性：</h2><ol>
+<li><p>通过下标获取：通过标签的下标的方式。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">href = a[<span class="string">&#x27;href&#x27;</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>通过attrs属性获取：示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">href = a.attrs[<span class="string">&#x27;href&#x27;</span>]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="CSS选择器："><a href="#CSS选择器：" class="headerlink" title="CSS选择器："></a>CSS选择器：</h2><h3 id="select方法："><a href="#select方法：" class="headerlink" title="select方法："></a>select方法：</h3><p>使用以上方法可以方便的找出元素。但有时候使用<code>css</code>选择器的方式可以更加的方便。使用<code>css</code>选择器的语法，应该使用<code>select</code>方法。以下列出几种常用的<code>css</code>选择器方法：</p>
+<h4 id="（1）通过标签名查找："><a href="#（1）通过标签名查找：" class="headerlink" title="（1）通过标签名查找："></a>（1）通过标签名查找：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&#x27;a&#x27;</span>))</span><br></pre></td></tr></table></figure>
 
-<h2 id="建立路由"><a href="#建立路由" class="headerlink" title="建立路由"></a>建立路由</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment"># re_path(r&#x27;^$&#x27;, views.index),</span></span><br><span class="line">    re_path(<span class="string">r&#x27;^reg/$&#x27;</span>, views.RegView.as_view()),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="（2）通过类名查找："><a href="#（2）通过类名查找：" class="headerlink" title="（2）通过类名查找："></a>（2）通过类名查找：</h4><p>通过类名，则应该在类的前面加一个<code>.</code>。比如要查找<code>class=sister</code>的标签。示例代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&#x27;.sister&#x27;</span>))</span><br></pre></td></tr></table></figure>
 
-<h2 id="在视图模型中引入drf框架，引入序列化类，并做数据验证"><a href="#在视图模型中引入drf框架，引入序列化类，并做数据验证" class="headerlink" title="在视图模型中引入drf框架，引入序列化类，并做数据验证"></a>在视图模型中引入drf框架，引入序列化类，并做数据验证</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserInfoSerializer</span>(<span class="params">serializers.ModelSerializer</span>):</span></span><br><span class="line">    password2 = serializers.CharField(label=<span class="string">&quot;重复密码&quot;</span>, max_length=<span class="number">11</span>, write_only=<span class="literal">True</span>)</span><br><span class="line">    password = serializers.CharField(label=<span class="string">&quot;密码&quot;</span>, max_length=<span class="number">11</span>, write_only=<span class="literal">True</span>)</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        model = UserInfo</span><br><span class="line">        fields = (<span class="string">&#x27;id&#x27;</span>,<span class="string">&#x27;mobile&#x27;</span>,<span class="string">&#x27;password&#x27;</span>,<span class="string">&#x27;password2&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validate_mobile</span>(<span class="params">self, value</span>):</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> re.match(<span class="string">r&#x27;^1[3-9]\d&#123;9&#125;$&#x27;</span>, value):</span><br><span class="line">            <span class="built_in">print</span>(value)</span><br><span class="line">            <span class="keyword">raise</span> serializers.ValidationError(<span class="string">&#x27;手机号码不对&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> value</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validate</span>(<span class="params">self, data</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(data)</span><br><span class="line">        <span class="keyword">if</span> data[<span class="string">&#x27;password2&#x27;</span>] != data[<span class="string">&#x27;password&#x27;</span>]:</span><br><span class="line">            <span class="keyword">raise</span> serializers.ValidationError(<span class="string">&#x27;两次输入密码不一致&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span>(<span class="params">self, validated_data</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(validated_data)</span><br><span class="line">        <span class="keyword">del</span> validated_data[<span class="string">&#x27;password2&#x27;</span>]</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;----------------&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(validated_data)</span><br><span class="line">        user = UserInfo.objects.create(**validated_data)</span><br><span class="line">        <span class="keyword">return</span> user</span><br></pre></td></tr></table></figure>
+<h4 id="（3）通过id查找："><a href="#（3）通过id查找：" class="headerlink" title="（3）通过id查找："></a>（3）通过id查找：</h4><p>通过id查找，应该在id的名字前面加一个＃号。示例代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&quot;#link1&quot;</span>))</span><br></pre></td></tr></table></figure>
 
- 
+<h4 id="（4）组合查找："><a href="#（4）组合查找：" class="headerlink" title="（4）组合查找："></a>（4）组合查找：</h4><p>组合查找即和写 class 文件时，标签名与类名、id名进行的组合原理是一样的，例如查找 p 标签中，id 等于 link1的内容，二者需要用空格分开：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&quot;p #link1&quot;</span>))</span><br></pre></td></tr></table></figure>
+
+<p>直接子标签查找，则使用 &gt; 分隔：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&quot;head &gt; title&quot;</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="（5）通过属性查找："><a href="#（5）通过属性查找：" class="headerlink" title="（5）通过属性查找："></a>（5）通过属性查找：</h4><p>查找时还可以加入属性元素，属性需要用中括号括起来，注意属性和标签属于同一节点，所以中间不能加空格，否则会无法匹配到。示例代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&#x27;a[href=&quot;http://example.com/elsie&quot;]&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="（6）获取内容"><a href="#（6）获取内容" class="headerlink" title="（6）获取内容"></a>（6）获取内容</h4><p>以上的 select 方法返回的结果都是列表形式，可以遍历形式输出，然后用 get_text() 方法来获取它的内容。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">soup = BeautifulSoup(html, <span class="string">&#x27;lxml&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(soup.select(<span class="string">&#x27;title&#x27;</span>)))</span><br><span class="line"><span class="built_in">print</span>(soup.select(<span class="string">&#x27;title&#x27;</span>)[<span class="number">0</span>].get_text())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> title <span class="keyword">in</span> soup.select(<span class="string">&#x27;title&#x27;</span>):</span><br><span class="line">    <span class="built_in">print</span>(title.get_text())</span><br></pre></td></tr></table></figure> 
       <!-- reward -->
       
       <div id="reword-out">
@@ -188,12 +234,12 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.dingguojing.xyz/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.dingguojing.xyz/bs4/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bs4/" rel="tag">bs4</a></li></ul>
 
     </footer>
   </div>
@@ -201,19 +247,10 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
+    
       <a href="/xpath/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            xpath
-          
-        </div>
-      </a>
-    
-    
-      <a href="/django%E4%B8%8Badmin%E7%AB%99%E7%82%B9/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">django下admin站点</div>
+        <div class="article-nav-title">xpath</div>
       </a>
     
   </nav>

@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>django中drf使用 |  不停</title>
+      <title>xpath |  不停</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -52,7 +52,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-django中drf使用"
+  id="post-xpath"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -63,7 +63,7 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  django中drf使用
+  xpath
 </h1>
  
 
@@ -71,11 +71,11 @@ var _hmt = _hmt || [];
     </header>
      
     <div class="article-meta">
-      <a href="/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/" class="article-date">
-  <time datetime="2022-02-17T08:21:28.000Z" itemprop="datePublished">2022-02-17</time>
+      <a href="/xpath/" class="article-date">
+  <time datetime="2022-03-31T03:51:53.000Z" itemprop="datePublished">2022-03-31</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/python/">python</a> / <a class="article-category-link" href="/categories/python/python%E6%A1%86%E6%9E%B6/">python框架</a> / <a class="article-category-link" href="/categories/python/python%E6%A1%86%E6%9E%B6/django/">django</a>
+    <a class="article-category-link" href="/categories/python/">python</a> / <a class="article-category-link" href="/categories/python/python%E7%88%AC%E8%99%AB/">python爬虫</a>
   </div>
   
 <div class="word_count">
@@ -83,7 +83,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">260</span>
+            <span class="post-count">950</span>
         </span>
     </span>
 
@@ -92,7 +92,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -107,16 +107,39 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>通过drf框架写一个用户注册的示例</p>
+  <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>xpath（XML Path Language）是一门在XML和HTML文档中查找信息的语言，可用来在XML和HTML文档中对元素和属性进行遍历。</p>
 <span id="more"></span>
 
-<h2 id="建立用户数据模型"><a href="#建立用户数据模型" class="headerlink" title="建立用户数据模型"></a>建立用户数据模型</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserInfo</span>(<span class="params">models.Model</span>):</span></span><br><span class="line">    mobile = models.CharField(max_length=<span class="number">11</span>, verbose_name=<span class="string">&#x27;手机&#x27;</span>,unique=<span class="literal">True</span>)</span><br><span class="line">    password = models.CharField(verbose_name=<span class="string">&#x27;密码&#x27;</span>, max_length=<span class="number">11</span>)</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        db_table = <span class="string">&#x27;tb_users&#x27;</span></span><br><span class="line">        verbose_name = <span class="string">&#x27;用户表&#x27;</span></span><br><span class="line">        verbose_name_plural = verbose_name</span><br></pre></td></tr></table></figure>
+<h2 id="XPath开发工具"><a href="#XPath开发工具" class="headerlink" title="XPath开发工具"></a>XPath开发工具</h2><p>Chrome插件XPath Helper。</p>
+<p>安装方法：</p>
+<ol>
+<li>打开插件伴侣，选择插件</li>
+<li>选择提取插件内容到桌面，桌面上会多一个文件夹</li>
+<li>把文件夹放入想要放的路径下</li>
+<li>打开谷歌浏览器，选择扩展程序，开发者模式打开，选择加载已解压的扩展程序，选择路径打开即可</li>
+</ol>
+<p>Firefox插件Try XPath。</p>
+<h2 id="XPath节点"><a href="#XPath节点" class="headerlink" title="XPath节点"></a>XPath节点</h2><p>在 XPath 中，有七种类型的节点：元素、属性、文本、命名空间、处理指令、注释以及文档（根）节点。XML 文档是被作为节点树来对待的。树的根被称为文档节点或者根节点。</p>
+<h2 id="XPath语法"><a href="#XPath语法" class="headerlink" title="XPath语法"></a>XPath语法</h2><h3 id="使用方式："><a href="#使用方式：" class="headerlink" title="使用方式："></a>使用方式：</h3><p>使用//获取整个页面当中的元素，然后写标签名，然后在写谓语进行提取，比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//title[@lang=<span class="string">&#x27;en&#x27;</span>]</span><br></pre></td></tr></table></figure>
 
-<h2 id="创建视图模型"><a href="#创建视图模型" class="headerlink" title="创建视图模型"></a>创建视图模型</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RegView</span>(<span class="params">CreateAPIView, ListAPIView</span>):</span></span><br><span class="line">    serializer_class = UserInfoSerializer</span><br><span class="line">    queryset = UserInfo.objects.<span class="built_in">all</span>()</span><br></pre></td></tr></table></figure>
+<h3 id="需要注意的知识点："><a href="#需要注意的知识点：" class="headerlink" title="需要注意的知识点："></a>需要注意的知识点：</h3><ol>
+<li><p>/和//的区别：/代表只获取子节点，//获取子孙节点，一般//用的比较多，当然也要视情况而定</p>
+</li>
+<li><p>contains：有时候某个属性中包含了多个值，那么可以使用contains函数，示例如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//title[contains(@lang,<span class="string">&#x27;en&#x27;</span>)]</span><br></pre></td></tr></table></figure></li>
+<li><p>谓词中下标是从1开始的，不是从0开始的</p>
+</li>
+</ol>
+<h2 id="lxml库"><a href="#lxml库" class="headerlink" title="lxml库"></a>lxml库</h2><p>lxml 是 一个HTML/XML的解析器，主要的功能是如何解析和提取 HTML/XML 数据。</p>
+<h3 id="基本使用："><a href="#基本使用：" class="headerlink" title="基本使用："></a>基本使用：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"></span><br><span class="line">text = <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">&lt;div&gt;</span></span><br><span class="line"><span class="string">    &lt;ul&gt;</span></span><br><span class="line"><span class="string">         &lt;li class=&quot;item-0&quot;&gt;&lt;a href=&quot;link1.html&quot;&gt;first item&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">         &lt;li class=&quot;item-1&quot;&gt;&lt;a href=&quot;link2.html&quot;&gt;second item&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">         &lt;li class=&quot;item-inactive&quot;&gt;&lt;a href=&quot;link3.html&quot;&gt;third item&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">         &lt;li class=&quot;item-1&quot;&gt;&lt;a href=&quot;link4.html&quot;&gt;fourth item&lt;/a&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">         &lt;li class=&quot;item-0&quot;&gt;&lt;a href=&quot;link5.html&quot;&gt;fifth item&lt;/a&gt;</span></span><br><span class="line"><span class="string">     &lt;/ul&gt;</span></span><br><span class="line"><span class="string"> &lt;/div&gt;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># 将字符串解析为html文档</span></span><br><span class="line">html = etree.HTML(text)</span><br><span class="line"><span class="built_in">print</span>(html)</span><br><span class="line"><span class="comment"># 按字符串序列化html</span></span><br><span class="line">result = etree.tostring(html).decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
 
-<h2 id="建立路由"><a href="#建立路由" class="headerlink" title="建立路由"></a>建立路由</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment"># re_path(r&#x27;^$&#x27;, views.index),</span></span><br><span class="line">    re_path(<span class="string">r&#x27;^reg/$&#x27;</span>, views.RegView.as_view()),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h3 id="从文件中读取html代码："><a href="#从文件中读取html代码：" class="headerlink" title="从文件中读取html代码："></a>从文件中读取html代码：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#读取</span></span><br><span class="line">html = etree.parse(<span class="string">&#x27;hello.html&#x27;</span>)</span><br><span class="line"></span><br><span class="line">result = etree.tostring(html).decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
 
-<h2 id="在视图模型中引入drf框架，引入序列化类，并做数据验证"><a href="#在视图模型中引入drf框架，引入序列化类，并做数据验证" class="headerlink" title="在视图模型中引入drf框架，引入序列化类，并做数据验证"></a>在视图模型中引入drf框架，引入序列化类，并做数据验证</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserInfoSerializer</span>(<span class="params">serializers.ModelSerializer</span>):</span></span><br><span class="line">    password2 = serializers.CharField(label=<span class="string">&quot;重复密码&quot;</span>, max_length=<span class="number">11</span>, write_only=<span class="literal">True</span>)</span><br><span class="line">    password = serializers.CharField(label=<span class="string">&quot;密码&quot;</span>, max_length=<span class="number">11</span>, write_only=<span class="literal">True</span>)</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        model = UserInfo</span><br><span class="line">        fields = (<span class="string">&#x27;id&#x27;</span>,<span class="string">&#x27;mobile&#x27;</span>,<span class="string">&#x27;password&#x27;</span>,<span class="string">&#x27;password2&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validate_mobile</span>(<span class="params">self, value</span>):</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> re.match(<span class="string">r&#x27;^1[3-9]\d&#123;9&#125;$&#x27;</span>, value):</span><br><span class="line">            <span class="built_in">print</span>(value)</span><br><span class="line">            <span class="keyword">raise</span> serializers.ValidationError(<span class="string">&#x27;手机号码不对&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> value</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validate</span>(<span class="params">self, data</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(data)</span><br><span class="line">        <span class="keyword">if</span> data[<span class="string">&#x27;password2&#x27;</span>] != data[<span class="string">&#x27;password&#x27;</span>]:</span><br><span class="line">            <span class="keyword">raise</span> serializers.ValidationError(<span class="string">&#x27;两次输入密码不一致&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span>(<span class="params">self, validated_data</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(validated_data)</span><br><span class="line">        <span class="keyword">del</span> validated_data[<span class="string">&#x27;password2&#x27;</span>]</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;----------------&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(validated_data)</span><br><span class="line">        user = UserInfo.objects.create(**validated_data)</span><br><span class="line">        <span class="keyword">return</span> user</span><br></pre></td></tr></table></figure>
+<h3 id="在lxml中使用xpath语法"><a href="#在lxml中使用xpath语法" class="headerlink" title="在lxml中使用xpath语法"></a>在lxml中使用xpath语法</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- hello.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;item-0&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;link1.html&quot;</span>&gt;</span>first item<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;item-1&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;link2.html&quot;</span>&gt;</span>second item<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;item-inactive&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;link3.html&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;bold&quot;</span>&gt;</span>third item<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;item-1&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;link4.html&quot;</span>&gt;</span>fourth item<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;item-0&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;link5.html&quot;</span>&gt;</span>fifth item<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>语法练习</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line">html = etree.parse(<span class="string">&#x27;hello.html&#x27;</span>)</span><br><span class="line"><span class="comment"># 获取所有li标签：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># for i in result:</span></span><br><span class="line"><span class="comment">#     print(etree.tostring(i))</span></span><br><span class="line"><span class="comment"># 获取所有li元素下的所有class属性的值：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li/@class&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># 获取li标签下href为www.baidu.com的a标签：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li/a[@href=&quot;www.baidu.com&quot;]&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># 获取li标签下所有span标签：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li//span&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># 获取li标签下的a标签里的所有class：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li/a//@class&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># 获取最后一个li的a的href属性对应的值：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li[last()]/a/@href&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># 获取倒数第二个li元素的内容：</span></span><br><span class="line"><span class="comment"># result = html.xpath(&#x27;//li[last()-1]/a&#x27;)</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="comment"># print(result[0].text)</span></span><br><span class="line"><span class="comment"># 获取倒数第二个li元素的内容的第二种方式：</span></span><br><span class="line">result = html.xpath(<span class="string">&#x27;//li[last()-1]/a/text()&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
 
  
       <!-- reward -->
@@ -188,12 +211,12 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.dingguojing.xyz/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.dingguojing.xyz/xpath/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xpath/" rel="tag">xpath</a></li></ul>
 
     </footer>
   </div>
@@ -201,19 +224,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/xpath/" class="article-nav-link">
+      <a href="/bs4/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            xpath
+            bs4
           
         </div>
       </a>
     
     
-      <a href="/django%E4%B8%8Badmin%E7%AB%99%E7%82%B9/" class="article-nav-link">
+      <a href="/django%E4%B8%ADdrf%E4%BD%BF%E7%94%A8/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">django下admin站点</div>
+        <div class="article-nav-title">django中drf使用</div>
       </a>
     
   </nav>

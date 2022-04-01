@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2022-02-17T08:30:50.000Z</updated>
+  <updated>2022-04-01T08:41:17.000Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bs4</title>
+    <link href="http://blog.dingguojing.xyz/bs4/"/>
+    <id>http://blog.dingguojing.xyz/bs4/</id>
+    <published>2022-04-01T08:38:58.000Z</published>
+    <updated>2022-04-01T08:41:17.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;和 lxml 一样，Beautiful Soup 也是一个HTML/XML的解析器，主要的功能也是如何解析和提取 HTML/XML 数据。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
+    
+    <category term="python爬虫" scheme="http://blog.dingguojing.xyz/categories/python/python%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="bs4" scheme="http://blog.dingguojing.xyz/tags/bs4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>xpath</title>
+    <link href="http://blog.dingguojing.xyz/xpath/"/>
+    <id>http://blog.dingguojing.xyz/xpath/</id>
+    <published>2022-03-31T03:51:53.000Z</published>
+    <updated>2022-03-31T08:15:25.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;xpath（XML Path Language）是一门在XML和HTML文档中查找信息的语言，可用来在XML和HTML文档中对元素和属性进行遍历。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="python" scheme="http://blog.dingguojing.xyz/categories/python/"/>
+    
+    <category term="python爬虫" scheme="http://blog.dingguojing.xyz/categories/python/python%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="xpath" scheme="http://blog.dingguojing.xyz/tags/xpath/"/>
+    
+  </entry>
   
   <entry>
     <title>django中drf使用</title>
