@@ -6,7 +6,7 @@
   <link href="http://blog.dingguojing.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.dingguojing.xyz/"/>
-  <updated>2022-04-01T08:41:17.000Z</updated>
+  <updated>2022-07-26T04:01:46.450Z</updated>
   <id>http://blog.dingguojing.xyz/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无纸化系统</title>
+    <link href="http://blog.dingguojing.xyz/%E6%97%A0%E7%BA%B8%E5%8C%96%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://blog.dingguojing.xyz/%E6%97%A0%E7%BA%B8%E5%8C%96%E7%B3%BB%E7%BB%9F/</id>
+    <published>2022-07-26T04:00:06.000Z</published>
+    <updated>2022-07-26T04:01:46.450Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;无纸化系统&quot;&gt;&lt;a href=&quot;#无纸化系统&quot; class=&quot;headerlink&quot; title=&quot;无纸化系统&quot;&gt;&lt;/a&gt;无纸化系统&lt;/h2&gt;&lt;p&gt;无纸化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电子凭证生产&lt;ul&gt;
+&lt;li&gt;数据转化PDF&lt;/li&gt;
+&lt;li&gt;数据加模板转化为PDF&lt;/li&gt;
+&lt;li&gt;虚拟打印 PDF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;手写签名&lt;ul&gt;
+&lt;li&gt;柜外清&lt;/li&gt;
+&lt;li&gt;手写屏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;电子印章&lt;ul&gt;
+&lt;li&gt;智能签章&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="点聚" scheme="http://blog.dingguojing.xyz/categories/%E7%82%B9%E8%81%9A/"/>
+    
+    <category term="文档" scheme="http://blog.dingguojing.xyz/categories/%E7%82%B9%E8%81%9A/%E6%96%87%E6%A1%A3/"/>
+    
+    
+    <category term="点聚" scheme="http://blog.dingguojing.xyz/tags/%E7%82%B9%E8%81%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>bs4</title>

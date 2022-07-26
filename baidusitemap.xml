@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.dingguojing.xyz/%E6%97%A0%E7%BA%B8%E5%8C%96%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2022-07-26</lastmod>
+  </url>
+  <url>
     <loc>http://blog.dingguojing.xyz/bs4/</loc>
     <lastmod>2022-04-01</lastmod>
   </url>
