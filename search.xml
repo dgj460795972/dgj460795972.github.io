@@ -687,4 +687,39 @@
         <tag>点聚</tag>
       </tags>
   </entry>
+  <entry>
+    <title>问题梳理</title>
+    <url>/%E9%97%AE%E9%A2%98%E6%A2%B3%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="测试问题"><a href="#测试问题" class="headerlink" title="测试问题"></a>测试问题</h2><h3 id="获取token的接口"><a href="#获取token的接口" class="headerlink" title="获取token的接口"></a>获取token的接口</h3><p>通过在应用系统管理中，添加应用系统，appKey应该和系统编号（sys_no）一致，通过sys_no查找到密码，然后实行 md5(appSecret + nonce +timestamp)，校验签名，通过appkey查询token数据。</p>
+<span id="more"></span>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"># 通过postman中Pre-request Script功能，获取校验数据，进行测试</span><br><span class="line"><span class="comment">//设置appKey</span></span><br><span class="line">pm.globals.set(<span class="string">&quot;appKey&quot;</span>, <span class="string">&quot;boss&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> appKey = pm.globals.get(<span class="string">&quot;appKey&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;appKey:&quot;</span> + appKey);</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置appSecret</span></span><br><span class="line">pm.globals.set(<span class="string">&quot;appSecret&quot;</span>, <span class="string">&quot;NSZLmKs0rmr9o9gqL8NYU21AYtU1rdYlCkWxsA==&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> appSecret = pm.globals.get(<span class="string">&quot;appSecret&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;appSecret:&quot;</span> + appSecret);</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置随机数</span></span><br><span class="line">pm.globals.set(<span class="string">&quot;nonce&quot;</span>, <span class="string">&quot;dgj&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> nonce = pm.globals.get(<span class="string">&quot;nonce&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;nonce:&quot;</span> + nonce);</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置时间</span></span><br><span class="line">pm.globals.set(<span class="string">&quot;timestamp&quot;</span>, <span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line"><span class="keyword">var</span> timestamp = pm.globals.get(<span class="string">&quot;timestamp&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;timestamp:&quot;</span> + timestamp);</span><br><span class="line"></span><br><span class="line"><span class="comment">//MD5待签数据</span></span><br><span class="line"><span class="keyword">var</span> signData = appSecret + nonce + timestamp;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;signData:&quot;</span> + signData);</span><br><span class="line"></span><br><span class="line"><span class="comment">//签名数据</span></span><br><span class="line"><span class="keyword">var</span> signedData = CryptoJS.MD5(signData).toString();</span><br><span class="line">pm.globals.set(<span class="string">&quot;signature&quot;</span>, signedData);</span><br><span class="line"><span class="keyword">var</span> signature = pm.globals.get(<span class="string">&quot;signature&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;signature:&quot;</span> + signature);</span><br><span class="line"># 测试数据</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;appKey&quot;</span>:<span class="string">&quot;&#123;&#123;appKey&#125;&#125;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;nonce&quot;</span>:<span class="string">&quot;&#123;&#123;nonce&#125;&#125;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;timeStamp&quot;</span>:<span class="string">&quot;&#123;&#123;timestamp&#125;&#125;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;signature&quot;</span>:<span class="string">&quot;&#123;&#123;signature&#125;&#125;&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="系统不能建章"><a href="#系统不能建章" class="headerlink" title="系统不能建章"></a>系统不能建章</h3><p>原因：没有加载loadOCX，缺少HWPostil-Server-x64.ocx</p>
+<h3 id="建设证书"><a href="#建设证书" class="headerlink" title="建设证书"></a>建设证书</h3><p>服务器证书和加密机证书两种方式，服务器证书，文件PFX格式。</p>
+<h3 id="控件授权"><a href="#控件授权" class="headerlink" title="控件授权"></a>控件授权</h3><p>C：// windows / winaip.exe ，打开软件，在应用里面进行授权。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">授权码：DJC-QZIMDIRRWEBJJPD7E9DIRR71O5JLNK-EFHCCACJ-CIDICAIE</span><br></pre></td></tr></table></figure>
+
+<h3 id="电子合同合成签章接口"><a href="#电子合同合成签章接口" class="headerlink" title="电子合同合成签章接口"></a>电子合同合成签章接口</h3><p>涉及到印章，证书，模板3个部分。</p>
+<ul>
+<li><p>印章（制作印章的两种方式）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">印章名称、证书名称、交易机构名称一致。</span><br><span class="line">2.1 印章来源：</span><br><span class="line">1、物理章加盖在白纸上，1:1 扫描出来pdf，再抠图   （山西农信采用此方式，公司会处理印章抠图）</span><br><span class="line">2、印章制作工具：可以动态设计生成印章</span><br><span class="line"></span><br><span class="line">2.2 印章制作</span><br><span class="line">注意事项：印章DPI：填192，不要默认96</span><br><span class="line"></span><br><span class="line">1、审批流</span><br><span class="line">印模中心 -&gt;  添加印模 -&gt; 印模审批 -&gt; 通过 -&gt; 印章管理 -&gt; 制章</span><br><span class="line"></span><br><span class="line">2、快捷制章</span><br><span class="line">直接添加印模，内部处理成印章，不需要通过审批流</span><br></pre></td></tr></table></figure></li>
+<li><p>证书中心</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2.3 证书</span><br><span class="line">证书是国家授信的CA机构颁发的证书文件</span><br><span class="line">证书算法：RSA，及国密SM2 （山西农信添加的是RSA算法软证书）</span><br><span class="line">证书文件格式： </span><br><span class="line">      PFX ：软证书，公私钥一体的证书文件</span><br><span class="line">      CER ：公钥文件</span><br><span class="line">注: 国密算法证书不存在 PFX 格式，需要借助硬件设备存在， 如加密机，签名验签服务器， UKey</span><br><span class="line">使用场景：电子文件盖章后，再进行数字签名</span><br><span class="line">原理：对盖章后的文件的哈希摘要值，进行数字签名，再把签名结果及公钥打包到文件中</span><br></pre></td></tr></table></figure></li>
+<li><p>模板中心</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">规则名称和模板名称一致。</span><br><span class="line">2.5 模板管理</span><br><span class="line">模板制作</span><br><span class="line">模板底稿：可以通过word、excel、图片格式jpg、bmp、png等、txt，拖拽式设计</span><br><span class="line">模板动态值：通过绘制节点，节点命名双方视情况商议</span><br><span class="line"></span><br><span class="line">2.6 盖章规则设置</span><br><span class="line">通过盖章规则设置，预设盖章的位置及绑定的证书、印章</span><br><span class="line">注：山西农信通过机构码 tranOrganNo 标识，来获取证书印章</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="自助柜存单签章"><a href="#自助柜存单签章" class="headerlink" title="自助柜存单签章"></a>自助柜存单签章</h2><ul>
+<li><p>使用场景</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">自助机上做的（存单上做的）</span><br><span class="line">根据纸质样式做一个模板，（套打）</span><br><span class="line">物理章（盖在纸上）</span><br><span class="line">印章制作软件（电子印章）</span><br><span class="line">打印，在存单柜上打印的。</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>点聚</category>
+        <category>测试问题</category>
+      </categories>
+      <tags>
+        <tag>点聚</tag>
+      </tags>
+  </entry>
 </search>
